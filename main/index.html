@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="icon" type="image/png" href="../assets/images/iLoveABAP.png">
     <link rel="stylesheet" href="style.css">
+
     <title>Janine Lauber-Kueppers</title>
 </head>
+
 <body>
-<header class="hero">
-    <div class="hero-text">
-        <h1 class="title">Janine Lauber-Küppers</h1>
-        <p class="subtitle">Fachinformatikerin für Anwendungsentwicklung</p>
+    <div class="display-wrapper">
+       <!-- Banner mit Titel -->
+        <header class="hero">
+            <div class="hero-text">
+                <h1 class="title">Janine Lauber-Küppers</h1>
+                <p class="subtitle">Fachinformatikerin für Anwendungsentwicklung</p>
+            </div>
+        </header> 
+       <!-- Menüleiste -->
+        <nav class="navbar">
+            <ul>
+                <li class="list-element">
+                    <a href="#">Startseite</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Über mich</a>
+                    <ul class="dropdown-content">
+                        <li>#Lebenslauf</a></li>
+                        <li>#Qualifikationen</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Projekte</a>
+                    <ul class="dropdown-content">
+                        <li>#ABAP</a></li>
+                        <li>#Webentwicklung</a></li>
+                        <li>#REST-APIs</a></li>
+                    </ul>
+                </li>
+
+                <li class="list-element">
+                    <a href="#">Kontakt</a>
+                </li>   
+            </ul>
+        </nav>
     </div>
-</header> 
+    <!-- Hauptbereich -->
+    <div class="content-wrapper">
+        <div class="left-content">
+            <img class="title-pic" src="../assets/images/Bewerbungsfoto.jpg" alt="Profilbild">
+        </div>
 
-<nav class="navbar">
-    <ul>
-        <li class="list-element">
-            <a href="#">Startseite</a>
-        </li>
+        <div class="middle-content">
+            <a>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</a>
+        </div>
 
-        <li class="dropdown">
-            <a href="#">Über mich</a>
-            <ul class="dropdown-content">
-                <li>#Lebenslauf</a></li>
-                <li>#Qualifikationen</a></li>
-            </ul>
-        </li>
 
-        <li class="dropdown">
-            <a href="#">Projekte</a>
-            <ul class="dropdown-content">
-                <li>#ABAP</a></li>
-                <li>#Webentwicklung</a></li>
-                <li>#REST-APIs</a></li>
-            </ul>
-        </li>
-
-        <li class="list-element">
-            <a href="#">Kontakt</a>
-        </li>    
-    </ul>
-</nav>
-    
+    </div>
 </body>
 </html>

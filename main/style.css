@@ -15,6 +15,16 @@ a {
     src: url("../assets/fonts/Quicksand/static/Quicksand-Medium.ttf"                                   );
 }
 
+/********** Container-Construction **********/
+.display-wrapper {
+    display: grid;
+
+    gap: 1rem;
+
+    width: 100%;
+    height: 100%;
+}
+
 /********** Banner **********/
 .hero {
     display: flex;
@@ -30,18 +40,23 @@ a {
 }
 
 .hero-text{
-    margin-left: 5rem;
+    font-family: 'Qicksand-Regular';
+    color: whitesmoke;
 }
 
 .title {
-    font-family: 'Qicksand-Regular';
-    color: whitesmoke;
     font-size: 3.5rem;
+    margin-left: 5rem;
+
+    letter-spacing: 0.50rem;
 }
 
 .subtitle {
-    font-family: 'Qicksand-Regular';
     font-size: 1.5rem;
+    margin-left: 8rem;
+    margin-top: 0.6rem;
+    letter-spacing: 0.25rem;
+
     color: whitesmoke;
     text-align: center;
 }
@@ -49,24 +64,25 @@ a {
 /********** Navigation **********/
 .navbar {
     background-color: #b4aec9;
-    height: 50px;
-
+    height: 40px;
 }
 
 .navbar > ul {
-    list-style: none;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 50px;
+    list-style: none;
+
+    height: 40px;
+    min-width: 250px;
 }
 
 .navbar li {
     display: block;
-    
-    color: whitesmoke;
     font-family: 'Qicksand-Regular';
     font-weight: bolder;
+    color: whitesmoke;
+
     font-size: 1.3rem;
     letter-spacing: 1.75px;
 }
@@ -76,7 +92,8 @@ a {
 }
 
 .navbar a {
-    display: block;
+    display: block flow;
+
     padding: 0.80rem 2rem;
     
     color: whitesmoke;
@@ -85,6 +102,7 @@ a {
 
 .navbar a:hover {
     background-color: #403547;
+
 }
 
 .dropdown {
@@ -116,4 +134,40 @@ a {
 
 .dropdown-content li a {
     width: 100%;
+}
+
+/*** Content ***/
+.content-wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    width: 100%;
+    height: 100%;
+}
+
+/*** Content left ***/
+.left-content {
+    background-color: rosybrown;
+
+    padding: 0.5rem;
+}
+
+.title-pic {
+    width: 480px;
+    height: 600px;
+
+    margin-top: 2rem;
+}
+
+.middle-content {
+    height: 100%;
+
+    padding: 0.5rem;
+
+    font-family: 'Qicksand-Regular';
+    background-color: aquamarine;
 }
