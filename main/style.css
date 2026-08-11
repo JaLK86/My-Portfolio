@@ -1,4 +1,4 @@
-/*********** Normalize *************/
+/************************************************   Normalize   ********************************************/
 * {
     box-sizing: border-box;
 
@@ -12,10 +12,9 @@ a {
 
 @font-face {
     font-family: 'Qicksand-Regular';
-    src: url("../assets/fonts/Quicksand/static/Quicksand-Medium.ttf"                                   );
+    src: url("../assets/fonts/Quicksand/static/Quicksand-Medium.ttf");
 }
 
-/********** Container-Construction **********/
 .display-wrapper {
     display: grid;
 
@@ -25,7 +24,10 @@ a {
     height: 100%;
 }
 
-/********** Banner **********/
+
+/************************************************   Banner   ********************************************/
+
+/*** Banner-Layout ***/
 .hero {
     display: flex;
     align-items: center;
@@ -39,34 +41,38 @@ a {
     background-repeat: no-repeat;
 }
 
+/*** Textormatierung ür Banner ***/
 .hero-text{
     font-family: 'Qicksand-Regular';
     color: whitesmoke;
 }
 
+/*** Haupttitel ***/
 .title {
     font-size: 3.5rem;
     margin-left: 5rem;
-
     letter-spacing: 0.50rem;
 }
 
+/*** Untertitel ***/
 .subtitle {
     font-size: 1.5rem;
     margin-left: 8rem;
     margin-top: 0.6rem;
     letter-spacing: 0.25rem;
 
-    color: whitesmoke;
     text-align: center;
 }
 
-/********** Navigation **********/
+
+
+/************************************************   Navigationsleiste   ********************************************/
 .navbar {
     background-color: #b4aec9;
     height: 40px;
 }
 
+/*** Listenelemente mit Dropdown-Funktion ***/
 .navbar > ul {
     display: flex;
     justify-content: flex-start;
@@ -74,39 +80,55 @@ a {
     list-style: none;
 
     height: 40px;
-    min-width: 250px;
+    /* min-width: 250px; */
 }
 
+/*** Menüpunkte ***/
+.navbar a {
+    display: block;
+
+    padding: 0.80rem 2rem;
+    
+    color: whitesmoke;
+}
+
+.navbar a:hover {
+    background-color: #403547;
+    font-size: 21px;
+
+    transition: 0.2s ease-in-out;  
+
+    height: 48px;
+}
+
+/*** Dropdown-Menü-Elemente ***/
 .navbar li {
     display: block;
     font-family: 'Qicksand-Regular';
     font-weight: bolder;
     color: whitesmoke;
 
-    font-size: 1.3rem;
+    font-size: 20px;
     letter-spacing: 1.75px;
 }
 
 .navbar li:hover {
-    background-color: #403547;
-}
+    font-size: 13px;  
+    font-weight: bolder;
 
-.navbar a {
-    display: block flow;
-
-    padding: 0.80rem 2rem;
-    
-    color: whitesmoke;
-    font-family: 'Qicksand-Regular';
-}
-
-.navbar a:hover {
-    background-color: #403547;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;  
 
 }
 
 .dropdown {
     position: relative;
+}
+
+.dropdown:hover {
+    background-color: #403547;
+    height: 48px;
+    width: 200px;
 }
 
 /*** Dropdown zunächst verstecken ***/
@@ -115,21 +137,26 @@ a {
     position: absolute;
     top: 100%;
     left: 0;
+    right: 0;
 
-    min-width: 200px;
-    background-color: #b4aec9;
+    background-color: #403547;
 
     list-style: none;
     z-index: 1000;
 } 
 
-/*** Dropdown aneigen beim Hover ***/
+/*** Dropdown anzeigen beim Hover ***/
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
 .dropdown-content li {
     display: block;
+
+    font-size: 12px;    
+    font-weight: lighter;
+
+    padding: 0.5rem;
 }
 
 .dropdown-content li a {
