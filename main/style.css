@@ -1,7 +1,7 @@
 /************************************************   Normalize   ********************************************/
+
 * {
     box-sizing: border-box;
-
     padding: 0;
     margin: 0;
 }
@@ -17,7 +17,6 @@ a {
 
 .display-wrapper {
     display: grid;
-
     gap: 1rem;
 
     width: 100%;
@@ -28,6 +27,7 @@ a {
 /************************************************   Banner   ********************************************/
 
 /*** Banner-Layout ***/
+
 .hero {
     display: flex;
     align-items: center;
@@ -42,24 +42,25 @@ a {
 }
 
 /*** Textormatierung ür Banner ***/
+
 .hero-text{
     font-family: 'Qicksand-Regular';
     color: whitesmoke;
 }
 
 /*** Haupttitel ***/
+
 .title {
     font-size: 3.5rem;
     margin-left: 5rem;
-    letter-spacing: 0.50rem;
 }
 
 /*** Untertitel ***/
+
 .subtitle {
     font-size: 1.5rem;
     margin-left: 8rem;
     margin-top: 0.6rem;
-    letter-spacing: 0.25rem;
 
     text-align: center;
 }
@@ -67,58 +68,57 @@ a {
 
 
 /************************************************   Navigationsleiste   ********************************************/
+
 .navbar {
     background-color: #b4aec9;
+    
     height: 40px;
 }
 
 /*** Listenelemente mit Dropdown-Funktion ***/
+
 .navbar > ul {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    list-style: none;
+    text-align: center;
 
     height: 40px;
-    /* min-width: 250px; */
 }
 
 /*** Menüpunkte ***/
+
 .navbar a {
     display: block;
 
-    padding: 0.80rem 2rem;
-    
     color: whitesmoke;
+    transition: background-color 0.2s ease;
+
+    padding: 0.80rem 2rem;
 }
 
 .navbar a:hover {
     background-color: #403547;
-    font-size: 21px;
-
-    transition: 0.2s ease-in-out;  
-
-    height: 48px;
-}
-
-/*** Dropdown-Menü-Elemente ***/
-.navbar li {
-    display: block;
-    font-family: 'Qicksand-Regular';
     font-weight: bolder;
     color: whitesmoke;
 
-    font-size: 20px;
-    letter-spacing: 1.75px;
+    height: 40px;
+}
+
+/*** Dropdown-Menü-Elemente ***/
+
+.navbar li {
+    display: block;
+    text-align: center;
+
+    font-family: 'Qicksand-Regular';
+    font-weight: bolder;
+
+    width: 200px;
 }
 
 .navbar li:hover {
-    font-size: 13px;  
-    font-weight: bolder;
-
     cursor: pointer;
-    transition: 0.2s ease-in-out;  
-
+    transition: 0.1s ease-in-out;  
 }
 
 .dropdown {
@@ -126,8 +126,14 @@ a {
 }
 
 .dropdown:hover {
+    text-align: center;
+
+
     background-color: #403547;
-    height: 48px;
+    color: whitesmoke;
+    font-weight: bold;
+
+    height: 40px;
     width: 200px;
 }
 
@@ -135,17 +141,19 @@ a {
 .dropdown-content {
     display: none;
     position: absolute;
+    text-align: center;
+
     top: 100%;
     left: 0;
     right: 0;
+    z-index: 1000;
 
     background-color: #403547;
-
     list-style: none;
-    z-index: 1000;
 } 
 
 /*** Dropdown anzeigen beim Hover ***/
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -153,17 +161,32 @@ a {
 .dropdown-content li {
     display: block;
 
-    font-size: 12px;    
     font-weight: lighter;
 
+    color: #decee7;
+
+    font-size: 12px;    
+
     padding: 0.5rem;
+    transition: 0.1s ease-in-out;  
+}
+
+.dropdown-content li:hover {
+    color: whitesmoke;
+    font-weight: bolder;
 }
 
 .dropdown-content li a {
     width: 100%;
 }
 
-/*** Content ***/
+
+
+
+
+
+
+/************************************************   Content   ********************************************/
 .content-wrapper {
     display: grid;
     align-items: center;
@@ -171,6 +194,7 @@ a {
 
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+    background-color: whitesmoke;
 
     width: 100%;
     height: 100%;
@@ -178,7 +202,6 @@ a {
 
 /*** Content left ***/
 .left-content {
-    background-color: rosybrown;
 
     padding: 0.5rem;
 }
@@ -196,5 +219,4 @@ a {
     padding: 0.5rem;
 
     font-family: 'Qicksand-Regular';
-    background-color: aquamarine;
 }
