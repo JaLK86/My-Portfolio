@@ -1,22 +1,32 @@
-Quicksand Variable Font
-=======================
+Roboto Mono Variable Font
+=========================
 
-This download contains Quicksand as both a variable font and static fonts.
+This download contains Roboto Mono as both variable fonts and static fonts.
 
-Quicksand is a variable font with this axis:
+Roboto Mono is a variable font with this axis:
   wght
 
-This means all the styles are contained in a single file:
-  Quicksand-VariableFont_wght.ttf
+This means all the styles are contained in these files:
+  Roboto_Mono/RobotoMono-VariableFont_wght.ttf
+  Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Quicksand:
-  static/Quicksand-Light.ttf
-  static/Quicksand-Regular.ttf
-  static/Quicksand-Medium.ttf
-  static/Quicksand-SemiBold.ttf
-  static/Quicksand-Bold.ttf
+in those cases you can use the static font files for Roboto Mono:
+  Roboto_Mono/static/RobotoMono-Thin.ttf
+  Roboto_Mono/static/RobotoMono-ExtraLight.ttf
+  Roboto_Mono/static/RobotoMono-Light.ttf
+  Roboto_Mono/static/RobotoMono-Regular.ttf
+  Roboto_Mono/static/RobotoMono-Medium.ttf
+  Roboto_Mono/static/RobotoMono-SemiBold.ttf
+  Roboto_Mono/static/RobotoMono-Bold.ttf
+  Roboto_Mono/static/RobotoMono-ThinItalic.ttf
+  Roboto_Mono/static/RobotoMono-ExtraLightItalic.ttf
+  Roboto_Mono/static/RobotoMono-LightItalic.ttf
+  Roboto_Mono/static/RobotoMono-Italic.ttf
+  Roboto_Mono/static/RobotoMono-MediumItalic.ttf
+  Roboto_Mono/static/RobotoMono-SemiBoldItalic.ttf
+  Roboto_Mono/static/RobotoMono-BoldItalic.ttf
 
 Get started
 -----------
