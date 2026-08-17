@@ -85,6 +85,7 @@ a {
     font-weight: bolder;
     color: whitesmoke;
     height: 28px;
+
 }
 
 /* Dropdown-Menü-Layout */
@@ -137,7 +138,7 @@ a {
 .dropdown-content li > a {
     font-weight: lighter;
     color: whitesmoke;
-    font-size: 12px;    
+    font-size: 12px;   
     transition: 0.1s ease-in-out;  
 }
 
@@ -149,7 +150,18 @@ a {
 
 /************************************************  # # #  Hauptbereich  # # #  ********************************************/
 
-/* Layout */
+/* Layout <> Startseite */
+.main-content-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    font-family: 'Roboto-Mono';
+}
+
+/* Layout <> Seiten */
 .content-wrapper {
     display: grid;
     align-items: center;
@@ -174,4 +186,24 @@ a {
 /* mittlerer Bereich */
 .middle-content {
     padding: 3rem;
+}
+
+/************************************************  # # #  Artikel  # # #  ********************************************/
+
+/*Startseiten-Titel*/
+.main-title{
+    width: 100%;
+    height: 10vh;
+    padding-top: 2rem;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+/*Startseiten-Artikel*/
+.main-article{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem 15rem 5rem 15rem;
+    font-size: 16px;
+    font-weight: 350;
 }
