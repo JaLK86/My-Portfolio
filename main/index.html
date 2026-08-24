@@ -13,32 +13,35 @@
 
 <body>
     <div class="display-wrapper">
+
        <!-- Banner -->
         <header class="hero">
-
             <div class="hero-text">
-                <!-- Titel -->
                 <h1 class="title">Janine Lauber-Küppers</h1>
                 <p class="subtitle">SAP-Entwicklerin</p>
             </div>
-
         </header> 
-
-    <!-- Menüleiste -->
+        
+        <!-- Menüleiste -->
         <nav class="navbar">
             <ul>
+                <!-- Menüpunkt einzeln -->
                 <li class="list-element">
                     <a href="#">Startseite</a>
                 </li>
 
+                <!-- Menüpunkt mit Dropdown -->
                 <li class="dropdown">
                     <a href="../aboutMe/aboutMe.html">Über mich</a>
+
+                    <!-- Dropdown <> Über mich -->
                     <ul class="dropdown-content">
                         <li><a href="../aboutMe/resume.html">Lebenslauf</a></li>
                         <li><a href="../aboutMe/qualifications.html">Qualifikationen</a></li>
                     </ul>
                 </li>
 
+                <!-- Dropdown <> Projekte -->
                 <li class="dropdown">
                     <a href="../projects/projects.html">Projekte</a>
                     <ul class="dropdown-content">
@@ -48,15 +51,23 @@
                     </ul>
                 </li>
 
+                <!-- Menüpunkt einzeln -->
                 <li class="list-element">
                     <a href="./contact.html">Kontakt</a>
                 </li>   
             </ul>
         </nav>
     </div>
-    <div class="main-content-wrapper">
-        <div class="main-content">
-            <h1 class="main-title">Lorem ipsum</h1>
+
+    <!-- Hauptbereich -->
+    <div class="content-wrapper">
+
+        <!-- Linke Spalte -->
+        <container class="left-column"></container>
+
+        <!-- Mittlere Spalte -->
+        <container class="middle-column">
+            <h1 class="main-title">SAP-Junior Developer sucht...</h1>
                 <article class="main-article">
                     Lorem ipsum dolor sit amet, consetetur 
                     sadipscing elitr, sed diam nonumy eirmod 
@@ -72,7 +83,46 @@
                     voluptua. At vero eos et accusam et justo 
                     duo dolores et ea rebum. 
                 </article>
-        </div>
+        </container>
+        
+        <!-- Rechte Spalte -->
+        <container class="right-column">
+            <!-- News-Feed -->
+            <section class="news-feed-box">
+                <!-- Statischer Kopfbereich -->
+                <div class="news-feed-header">
+                    <h2 class="news-feed-title">News-Feed</h2>
+                </div>
+                    <!-- News-Box -->
+                    <div class="news-article-box">
+                        <!-- Titel -->
+                        <p class="news-title">News</p>
+                            <!-- Text -->
+                            <article class="news-article-text">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
+                                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            </article>
+                    </div>
+                    <div class="news-article-box">
+                        <!-- Titel -->
+                        <p class="news-title">News</p>
+                            <!-- Text -->
+                            <article class="news-article-text">
+                                At vero eos et accusam et justo duo dolores et ea rebum.
+                            </article>
+                    </div>
+                    <div class="news-article-box">
+                        <!-- Titel -->
+                        <p class="news-title">News</p>
+                        <!-- Text -->
+                            <article class="news-article-text">
+                                Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet
+                            </article>
+                    </div>
+            </section>
+        </container>
+    </div>
+
     </div>
 </body>
 </html>

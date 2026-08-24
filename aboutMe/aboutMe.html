@@ -7,38 +7,42 @@
 
     <link rel="icon" type="image/png" href="../assets/images/Logo.jpg">
     <link rel="stylesheet" href="../main/style.css">
+    <link rel="stylesheet" href="./aboutMe.css">
 
-    <title>Janine Lauber-Kueppers</title>
+    <title>Über mich</title>
 </head>
 
 <body>
     <div class="display-wrapper">
+
        <!-- Banner -->
         <header class="hero">
-
             <div class="hero-text">
-                <!-- Titel -->
                 <h1 class="title">Janine Lauber-Küppers</h1>
                 <p class="subtitle">SAP-Entwicklerin</p>
             </div>
-
         </header> 
 
     <!-- Menüleiste -->
         <nav class="navbar">
             <ul>
+                <!-- Menüpunkt einzeln -->
                 <li class="list-element">
                     <a href="../main/index.html">Startseite</a>
                 </li>
 
+                <!-- Menüpunkt mit Dropdown -->
                 <li class="dropdown">
                     <a href="#">Über mich</a>
+
+                    <!-- Dropdown <> Über mich -->
                     <ul class="dropdown-content">
                         <li><a href="./resume.html">Lebenslauf</a></li>
                         <li><a href="./qualifications.html">Qualifikationen</a></li>
                     </ul>
                 </li>
 
+                <!-- Dropdown <> Projekte -->
                 <li class="dropdown">
                     <a href="../projects/projects.html">Projekte</a>
                     <ul class="dropdown-content">
@@ -48,11 +52,44 @@
                     </ul>
                 </li>
 
+                <!-- Menüpunkt einzeln -->
                 <li class="list-element">
                     <a href="../main/contact.html">Kontakt</a>
                 </li>   
             </ul>
         </nav>
+    </div>
+
+    <!-- Hauptbereich -->
+    <div class="content-wrapper">
+
+        <!-- Linke Spalte -->
+        <container class="left-column-me">
+            <img class="title-pic" src="../assets/images/Bewerbungsfoto.jpg" alt="titelbild">
+        </container>
+    
+        <!-- Rechte Spalte -->
+        <container class="right-column-me">
+            <h1 class="main-title-me">Was mich ausmacht...</h1>
+                <article class="main-article-me">
+                    Lorem ipsum dolor sit amet, consetetur 
+                    sadipscing elitr, sed diam nonumy eirmod 
+                    tempor invidunt ut labore et dolore magna 
+                    aliquyam erat, sed diam voluptua. At vero 
+                    eos et accusam et justo duo dolores et 
+                    ea rebum. Stet clita kasd gubergren, no 
+                    sea takimata sanctus est Lorem ipsum dolor 
+                    sit amet. Lorem ipsum dolor sit amet, 
+                    consetetur sadipscing elitr, sed diam 
+                    nonumy eirmod tempor invidunt ut labore 
+                    et dolore magna aliquyam erat, sed diam 
+                    voluptua. At vero eos et accusam et justo 
+                    duo dolores et ea rebum. 
+                </article>
+        </container>
+
+
+
     </div>
 </body>
 </html>

@@ -1,0 +1,43 @@
+/****************************************  # # #  Layout <> Hauptbereich  # # #  ********************************************/
+
+/* linke Spalte <> Über mich */
+.left-column-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 30%;
+    height: 100vh;
+}
+
+/* mittlere Spalte <> Über mich */
+.right-column-me {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    width: 70%;
+    height: 100vh;
+}
+
+/* Titelbild */
+.title-pic {
+    width: 320px;
+    height: 400px;
+}
+
+/* Seiten-Titel <> Über mich */
+.main-title-me {
+    font-size: 30px;
+    font-weight: 900;
+    padding: 5rem 1rem 1.2rem 0rem;
+}
+
+/* About Me Artikel*/
+.main-article-me {
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    font-weight: 350;
+    padding: 0rem 3rem 1.2rem 0rem;
+}

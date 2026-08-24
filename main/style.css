@@ -23,6 +23,7 @@ a {
 }
 
 
+
 /************************************************  # # #  Banner  # # #  ********************************************/
 
 /* Banner-Layout */
@@ -41,7 +42,7 @@ a {
 }
 
 /* Banner-Text */
-.hero-text{
+.hero-text {
     font-variant-caps: small-caps;
     color: rgba(244, 242, 242, 0.921);
     letter-spacing: 0.3rem;
@@ -49,21 +50,22 @@ a {
 
 /* Haupttitel */
 .title {
-    font-size: 36px;
-    margin-left: 15rem;
+    font-size: 42px;
+    margin-left: 20rem;
 }
 
 /* Untertitel */
 .subtitle {
     font-weight: bolder;
-    font-size: 18px;
-    margin-left: 20rem;
+    font-size: 20px;
+    margin-left: 25rem;
     margin-top: 0.5rem;
 }
 
 
 /************************************************  # # #  Menüleiste  # # #  ********************************************/
 
+/*Navigationsleiste*/
 .navbar {
     font-family: 'Roboto-Mono';
     background-color: #aeadad;
@@ -72,32 +74,18 @@ a {
     height: 28px;
 }
 
-/* Menüpunkte */
-.navbar a {
-    display: block;
-    color: #0c02028c;
-    padding: 0.2rem;
-    transition: background-color 0.2s ease;
-}
-
-.navbar a:hover {
-    background-color: #252525;
-    font-weight: bolder;
-    color: whitesmoke;
-    height: 28px;
-
-}
-
-/* Dropdown-Menü-Layout */
+/* Navigationsleiste mit Dropdown */
 .navbar > ul {
     display: flex;
     justify-content: flex-start;
 }
 
+/*Navigationsleiste <> Menüpunkte*/
 .navbar li {
     display: block;
     text-align: center;
     font-weight: bolder;
+    color: #0c02028c;
     width: 200px;
 }
 
@@ -106,6 +94,23 @@ a {
     transition: 0.1s ease-in-out;  
 }
 
+/*Navigationsleiste <> Seitenlinks*/
+.navbar a {
+    display: block;
+    color: #0c02028c;
+    padding: 0.2rem;
+    transition: background-color 0.2s ease;
+}
+
+.navbar a:hover {
+    background-color: #0c02028c;
+    font-weight: bolder;
+    color: whitesmoke;
+    height: 28px;
+
+}
+
+/*Dropdown Menü*/
 .dropdown {
     position: relative;
 }
@@ -126,7 +131,7 @@ a {
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: #666666;
+    background-color: #aeadad;
 } 
 
 /* Dropdown anzeigen beim Hover */
@@ -142,68 +147,128 @@ a {
     transition: 0.1s ease-in-out;  
 }
 
-.dropdown-content li a {
+.dropdown-content li {
     width: 100%;
     height: auto;
 }
 
 
-/************************************************  # # #  Hauptbereich  # # #  ********************************************/
+/****************************************  # # #  Layout <> Hauptbereich  # # #  ********************************************/
 
-/* Layout <> Startseite */
-.main-content-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    width: 100%;
-    height: 100vh;
-    background-color: white;
-    font-family: 'Roboto-Mono';
-}
-
-/* Layout <> Seiten */
+/* Seiten-Layout */
 .content-wrapper {
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 1fr 2fr 1fr; 
+    font-family: 'Roboto-Mono';
     gap: 1rem;
-    width: 100%;
     height: 100vh;
     background-color: white;
 }
 
-/* linker Bereich */
-.left-content {
-    padding: 3rem;
-}
-
-.title-pic {
-    width: 320px;
-    height: 400px;
-}
-
-/* mittlerer Bereich */
-.middle-content {
-    padding: 3rem;
-}
-
-/************************************************  # # #  Artikel  # # #  ********************************************/
-
-/*Startseiten-Titel*/
-.main-title{
-    width: 100%;
-    height: 10vh;
-    padding-top: 2rem;
-    font-size: 26px;
+/* Seiten-Titel */
+.main-title {
+    padding: 2rem 1rem 1.2rem 1rem;
+    font-size: 30px;
     font-weight: 900;
 }
 
 /*Startseiten-Artikel*/
-.main-article{
+.main-article {
     width: 100%;
     height: 100vh;
-    padding: 2rem 15rem 5rem 15rem;
     font-size: 16px;
     font-weight: 350;
+    padding: 0rem 1rem 1.2rem 1rem;
+}
+
+/* linke Spalte */
+.left-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 25%;
+    height: 100vh;
+}
+
+/* mittlere Spalte */
+.middle-column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+}
+
+.right-column {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    width: 25%;
+    height: 100vh;
+}
+
+
+/************************************************  # # #  News-Feed  # # #  ********************************************/
+
+/* News-Feed-Layout */
+.news-feed-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto-Mono';
+    width: 250px;
+    height: 500px; 
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 3px 5px dimgrey;
+    background: rgb(226, 224, 224);
+}
+
+/* News-Feed-Kopfbereich */
+.news-feed-header {
+    position: relative;
+}
+
+/* News-Feed-Titel */
+.news-feed-title {
+    font-size: 26px;
+    font-weight: 700;
+    width: 228px;
+    padding: 0rem 1.5rem 0.3rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 3px 5px dimgrey;
+    color: #0c02028c;
+    background-color: whitesmoke;
+    font-variant-caps: small-caps;
+}
+/* News-Box */
+.news-article-box {
+    height: auto;
+    width: 228px;
+    padding: 0.3rem 1rem 0.5rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 5px 7px lightgray;
+    background-color: whitesmoke;
+}
+
+.news-article-box:hover {
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s ease-in-out;  
+}
+
+/* News-Titel */
+.news-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0c02028c;
+}
+
+/* News-Artikel */
+.news-article-text {
+    font-size: 14px;
+    font-weight: 300;
 }
