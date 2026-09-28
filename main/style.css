@@ -32,32 +32,33 @@ a {
     align-items: center;
     justify-content: flex-start;
     background-position: center;
-    background-size: cover;
+    background-size: ;
     background-repeat: no-repeat;
     background-image: url("../assets/images/BackgroundBanner.png");
     border-bottom: 1px solid dimgrey;
     box-shadow: 0 3px 5px dimgrey;
     height: 140px;
-    width: 100%;
+    width: 120vw;
+    margin-left: -10vw;
 }
 
 /* Banner-Text */
 .hero-text {
-    font-variant-caps: small-caps;
+    font-family: 'Roboto-Mono';
     color: rgba(244, 242, 242, 0.921);
-    letter-spacing: 0.3rem;
 }
 
 /* Haupttitel */
 .title {
     font-size: 42px;
     margin-left: 20rem;
+    color: lightgray;
 }
 
 /* Untertitel */
 .subtitle {
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 16px;
     margin-left: 25rem;
     margin-top: 0.5rem;
 }
@@ -190,6 +191,17 @@ a {
     padding: 2rem;
     width: 25%;
     height: 100vh;
+}
+
+.pro-pic{
+    width: 225px;
+    height: 300px;
+}
+
+.abap-code {
+    align-items: center;
+    width: 300px;
+    height: 400px;
 }
 
 /* mittlere Spalte */

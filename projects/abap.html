@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="icon" type="image/png" href="../assets/images/Logo.jpg">
+    <link rel="stylesheet" href="../main/style.css">
+
+    <title>ABAP</title>
 </head>
+
 <body>
-    
-</body>
-</html>
+    <div class="display-wrapper">
+
+       <!-- Banner -->
+        <header class="hero">
+            <div class="hero-text">
+                <h1 class="title">Janine Lauber-Küppers</h1>
+                <p class="subtitle">SAP-Entwicklerin</p>
+            </div>
+        </header> 
+
+    <!-- Menüleiste -->
+        <nav class="navbar">
+            <ul>
+                <!-- Menüpunkt einzeln -->
+                <li class="list-element">
+                    <a href="../main/index.html">Startseite</a>
+                </li>
+
+                <!-- Menüpunkt mit Dropdown -->
+                <li class="dropdown">
+                    <a href="../aboutMe/aboutMe.html">Über mich</a>
+
+                    <!-- Dropdown <> Über mich -->
+                    <ul class="dropdown-content">
+                        <li><a href="../aboutMe/resume.html">Lebenslauf</a></li>
+                        <li><a href="../qualifications.html">Qualifikationen</a></li>
+                    </ul>
+                </li>
+
+                <!-- Dropdown <> Projekte -->
+                <li class="dropdown">
+                    <a href="./projects.html">Projekte</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">ABAP</a></li>
+                        <li><a href="./webentwicklung.html">Webentwicklung</a></li>
+                        <li><a href="./restAPIs.html">REST-APIs</a></li>
+                    </ul>
+                </li>
+
+                <!-- Menüpunkt einzeln -->
+                <li class="list-element">
+                    <a href="../main/contact.html">Kontakt</a>
+
+                </li>   
+            </ul>
+        </nav>
