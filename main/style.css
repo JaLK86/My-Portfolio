@@ -8,6 +8,7 @@
 
 a {
     text-decoration: none;
+    color: blue;
 }
 
 @font-face {
@@ -32,27 +33,25 @@ a {
     align-items: center;
     justify-content: flex-start;
     background-position: center;
-    background-size: ;
     background-repeat: no-repeat;
-    background-image: url("../assets/images/BackgroundBanner.png");
+    background-color: whitesmoke;
     border-bottom: 1px solid dimgrey;
     box-shadow: 0 3px 5px dimgrey;
     height: 140px;
-    width: 120vw;
-    margin-left: -10vw;
+    width: 100vw;
 }
 
 /* Banner-Text */
 .hero-text {
     font-family: 'Roboto-Mono';
-    color: rgba(244, 242, 242, 0.921);
+    font-variant-caps: small-caps;
+    color: rgba(0, 0, 0, 0.551);
 }
 
 /* Haupttitel */
 .title {
     font-size: 42px;
     margin-left: 20rem;
-    color: lightgray;
 }
 
 /* Untertitel */
@@ -200,8 +199,8 @@ a {
 
 .abap-code {
     align-items: center;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 300px;
 }
 
 /* mittlere Spalte */
