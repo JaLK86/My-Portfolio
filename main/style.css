@@ -12,8 +12,8 @@ a {
 }
 
 @font-face {
-    font-family: 'Roboto-Mono';
-    src: url("../assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf");
+    font-family: 'Poiret-One';
+    src: url("../assets/fonts/Poiret_One/PoiretOne-Regular.ttf");
 }
 
 .display-wrapper {
@@ -28,13 +28,15 @@ a {
 /************************************************  # # #  Banner  # # #  ********************************************/
 
 /* Banner-Layout */
+
 .hero {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: whitesmoke;
+    background-image: url("/assets/images/EyesOfMe.jpg");
+    background-size: cover;
     border-bottom: 1px solid dimgrey;
     box-shadow: 0 3px 5px dimgrey;
     height: 140px;
@@ -43,23 +45,25 @@ a {
 
 /* Banner-Text */
 .hero-text {
-    font-family: 'Roboto-Mono';
+    font-family: 'Poiret-One';
     font-variant-caps: small-caps;
-    color: rgba(0, 0, 0, 0.551);
+    font-weight: bolder;
+    letter-spacing: 0.75rem;
 }
 
 /* Haupttitel */
 .title {
     font-size: 42px;
     margin-left: 20rem;
+    color: rgba(245, 245, 245, 0.976);
 }
 
 /* Untertitel */
 .subtitle {
-    font-weight: bolder;
     font-size: 16px;
     margin-left: 25rem;
     margin-top: 0.5rem;
+    color: rgba(245, 245, 245, 0.866);
 }
 
 
@@ -67,11 +71,13 @@ a {
 
 /*Navigationsleiste*/
 .navbar {
-    font-family: 'Roboto-Mono';
+    font-family: 'Poiret-One';
+    font-weight: bolder;
+    color: black;
     background-color: #aeadad;
     border-bottom: 1px solid dimgrey;
     box-shadow: 0 3px 5px dimgrey;
-    height: 28px;
+    height: 26px;
 }
 
 /* Navigationsleiste mit Dropdown */
@@ -80,12 +86,10 @@ a {
     justify-content: flex-start;
 }
 
-/*Navigationsleiste <> Menüpunkte*/
+/* Navigationsleiste <> Menüpunktfelder */
 .navbar li {
     display: block;
     text-align: center;
-    font-weight: bolder;
-    color: #0c02028c;
     width: 200px;
 }
 
@@ -97,17 +101,15 @@ a {
 /*Navigationsleiste <> Seitenlinks*/
 .navbar a {
     display: block;
-    color: #0c02028c;
+    color: black;
     padding: 0.2rem;
     transition: background-color 0.2s ease;
 }
 
 .navbar a:hover {
-    background-color: #0c02028c;
+    background-color: #0c0202bb;
     font-weight: bolder;
     color: whitesmoke;
-    height: 28px;
-
 }
 
 /*Dropdown Menü*/
@@ -115,8 +117,8 @@ a {
     position: relative;
 }
 
-.dropdown:hover {
-    background-color: #aeadad;
+.dropdown:hover .navbar a:hover  {
+    background-color: #0c0202bb;
     color: whitesmoke;
     font-weight: bold;
     height: auto;
@@ -131,7 +133,7 @@ a {
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: #aeadad;
+    background-color: #f5f5f5;
 } 
 
 /* Dropdown anzeigen beim Hover */
@@ -141,8 +143,8 @@ a {
 
 /* Menüpunkte */
 .dropdown-content li > a {
-    font-weight: lighter;
-    color: whitesmoke;
+    font-weight: light;
+    color: black;
     font-size: 12px;   
     transition: 0.1s ease-in-out;  
 }
@@ -197,10 +199,9 @@ a {
     height: 300px;
 }
 
-.abap-code {
-    align-items: center;
-    width: 200px;
-    height: 300px;
+.eyes {
+    height: inherit;
+    width: fit-content;
 }
 
 /* mittlere Spalte */
