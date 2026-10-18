@@ -1,0 +1,62 @@
+/************************************************  # # #  News-Feed  # # #  ********************************************/
+
+/* News-Feed-Layout */
+.news-feed-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto-Mono';
+    width: 250px;
+    height: 500px; 
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 3px 5px dimgrey;
+    background: rgb(226, 224, 224);
+}
+
+/* News-Feed-Kopfbereich */
+.news-feed-header {
+    position: relative;
+}
+
+/* News-Feed-Titel */
+.news-feed-title {
+    font-size: 26px;
+    font-weight: 700;
+    width: 228px;
+    padding: 0rem 1.5rem 0.3rem 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 3px 5px dimgrey;
+    color: #0c02028c;
+    background-color: whitesmoke;
+    font-variant-caps: small-caps;
+}
+/* News-Box */
+.news-article-box {
+    height: auto;
+    width: 228px;
+    padding: 0.3rem 1rem 0.5rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 5px 7px lightgray;
+    background-color: whitesmoke;
+}
+
+.news-article-box:hover {
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s ease-in-out;  
+}
+
+/* News-Titel */
+.news-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0c02028c;
+}
+
+/* News-Artikel */
+.news-article-text {
+    font-size: 14px;
+    font-weight: 300;
+}
