@@ -74,7 +74,7 @@ a {
     font-family: 'Poiret-One';
     font-weight: bolder;
     color: black;
-    background-color: #aeadad;
+    background: #afafaf;
     border-bottom: 1px solid dimgrey;
     box-shadow: 0 3px 5px dimgrey;
     height: 26px;
@@ -107,9 +107,10 @@ a {
 }
 
 .navbar a:hover {
-    background-color: #0c0202bb;
+    background-color: #4e4e4e;
     font-weight: bolder;
     color: whitesmoke;
+
 }
 
 /*Dropdown Menü*/
@@ -199,10 +200,6 @@ a {
     height: 300px;
 }
 
-/* .eyes {
-    height: inherit;
-    width: fit-content;
-} */
 
 /* mittlere Spalte */
 .middle-column {

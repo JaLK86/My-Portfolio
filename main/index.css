@@ -1,36 +1,38 @@
+@font-face {
+    font-family: 'Poiret-One';
+    src: url("../assets/fonts/Poiret_One/PoiretOne-Regular.ttf");
+}
+
 /************************************************  # # #  News-Feed  # # #  ********************************************/
 
 /* News-Feed-Layout */
 .news-feed-box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    font-family: 'Roboto-Mono';
+    font-family: 'Poiret-One';
     width: 250px;
-    height: 500px; 
+    height: 80vh; 
     padding: 1rem;
     border-radius: 1rem;
-    box-shadow: 0 3px 5px dimgrey;
-    background: rgb(226, 224, 224);
-}
-
-/* News-Feed-Kopfbereich */
-.news-feed-header {
-    position: relative;
+    box-shadow: 1px 3px 5px dimgrey;
+    background: #afafaf;
 }
 
 /* News-Feed-Titel */
 .news-feed-title {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
-    width: 228px;
-    padding: 0rem 1.5rem 0.3rem 2.5rem;
-    border-radius: 1rem;
+    width: 250px;
+    padding: 0.3rem 0rem 0.3rem 0rem;
+    margin-top: -1.2rem;
+    text-align: center;
     box-shadow: 0 3px 5px dimgrey;
-    color: #0c02028c;
-    background-color: whitesmoke;
+    color: whitesmoke;
+    background-color: #4e4e4e;
     font-variant-caps: small-caps;
+    letter-spacing: 0.2rem;
 }
 /* News-Box */
 .news-article-box {
