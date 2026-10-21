@@ -3,7 +3,15 @@
     src: url("../assets/fonts/Poiret_One/PoiretOne-Regular.ttf");
 }
 
-/************************************************  # # #  News-Feed  # # #  ********************************************/
+/*   # # # # #   *** Images ***   # # # # # */
+
+.under-construction {
+    width: max-content;
+    height:max-content;
+    margin-left: 9.5rem;
+}
+
+/*   # # # # #   *** News-Feed ***   # # # # # */
 
 /* News-Feed-Layout */
 .news-feed-box {
