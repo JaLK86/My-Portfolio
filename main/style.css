@@ -73,6 +73,8 @@ a {
 .navbar {
     font-family: 'Poiret-One';
     font-weight: bolder;
+    font-variant-caps: small-caps;
+    letter-spacing: 0.2rem;
     color: black;
     background: #afafaf;
     border-bottom: 1px solid dimgrey;
@@ -110,7 +112,6 @@ a {
     background-color: #4e4e4e;
     font-weight: bolder;
     color: whitesmoke;
-
 }
 
 /*Dropdown Menü*/
@@ -153,6 +154,7 @@ a {
 .dropdown-content li {
     width: 100%;
     height: auto;
+    margin-top: 0.28rem;
 }
 
 /*  ***  # # # # #  Layout -> HTML-Body  # # # # #  ***   */
@@ -161,6 +163,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 3rem;
     gap: 1rem;
     height: 100vh;
     background-color: white;
